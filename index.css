@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(222, 222, 222);
+}
+
+.home{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    overflow-x: auto;
+}
+table th{
+    width: 20px;
+    background-color: rgb(255, 145, 0);
+    color: rgb(255, 255, 255);
+}
+#dataTable td{
+    height: 30px;
+    width: 100px;
+    min-width: 25px;
+    background-color: rgb(242, 242, 242);
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.614);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.modal2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.614);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal3{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.614);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal .modalBox, .modal2 .modalBox2{
+    width: 600px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.modal .modalBox input, .modal2 .modalBox2 input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding-left: 5px;
+    outline: none;
+}
+.modal2 .modalBox2 select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-top: 4px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.modal2 .modalBox2 input[type = "radio"]{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    outline: none;
+    display: inline;
+    margin-left: 15px;
+    margin-top: -20px;
+
+
+}
+
+
+
+.modal .modalBox, .modal3 .modalBox3{
+    width: 600px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.modal .modalBox input, .modal3 .modalBox3 input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding-left: 5px;
+    outline: none;
+}
+.modal2 .modalBox3 select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+    margin-top: 4px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.modal2 .modalBox3 input[type = "radio"]{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    outline: none;
+    display: inline;
+    margin-left: 15px;
+    margin-top: -20px;
+
+
+}
+
+
+
+
+
+
+.radioContainer{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.modal .modalBox button, .modal2 .modalBox2 button, .modal3 .modalBox3 button{
+    width: 100px;
+    height: 28px;
+    background-color: rgb(0, 255, 145);
+    border: none;
+    border-radius: 2px;
+    color: rgb(35, 35, 35);
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+.modal .modalBox p, .modal2 .modalBox2 p, .modal3 .modalBox3 p{
+    float: right;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+
+.addButton{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(0, 76, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addButton2{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.getUsersDataButton{
+    width: 130px;
+    height: 30px;
+    background-color: rgb(187, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selectionArea{
+    margin-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectionArea select{
+    width: 120px;
+    border-radius: 100px;
+    border: 2px solid orangered;
+    background-color: white;
+    height: 25px;
+}
+.selectionArea p{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.presenceImage{
+    width: 20px;
+    margin-top: 4px;
+}
+table td{
+    text-align: center;
+}
+
+#dataTable tr td:first-child{
+    text-align: left;
+    padding-left: 2px;
+    width: 180px;
+    min-width: 150px;
+    background-color: white;
+    font-weight: 900;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 4px rgb(159, 159, 159);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page{
+    width: 95%;
+}
+
+.usersTableContainer table td{
+    text-align: left;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.usersTableContainer table th{
+    position: sticky;
+    top: 0px;
+}
+
+.usersTableContainer table td button{
+    margin-right: 4px;
+    margin-left: 4px;
+    background-color: white;
+    border: 2px solid orangered;
+    width: 60px;
+    height: 25px;
+    border-radius: 4px;cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logout{
+    float: right;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid orangered;
+    color: white;
+    width: 70px;
+    height: 28px;
+    border-radius: 4px;cursor: pointer;
+}
+
+#dataTable{
+    display: none;
+    margin-bottom: 50px;
+}
+
+.usersTableContainer{
+    max-height: 450px;
+    overflow-y: auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px rgb(105, 105, 105);
+}
+
+/* width */
+.usersTableContainer::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  .usersTableContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .usersTableContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  .usersTableContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .search{
+    width: 200px;
+    height: 28px;
+    background: white;
+    border: 2px solid orangered;
+    border-radius: 100px;
+    padding-left: 5px;
+  }
+  
+  .searchButton{
+    background-color: orangered;
+    color: white;
+    border: 2px solid white;
+    width: 70px;
+    height: 28px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .modalBox2 h4{
+    color: rgb(1, 100, 1);
+    display: none;
+}
