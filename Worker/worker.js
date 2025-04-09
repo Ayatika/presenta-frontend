@@ -6,7 +6,7 @@ const trContainer = document.querySelector(".trContainer");
 let price = 0;
 var uid = localStorage.getItem("authUser");
 
-let fullTotal = 0;
+let fullTotal = 0; 
 
 const checkAuth=()=>{
     auth = localStorage.getItem("authUser");

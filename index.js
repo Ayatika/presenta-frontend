@@ -8,7 +8,7 @@ const logOutButton = document.querySelector(".logout");
 const closeModal = document.querySelector(".closeModal");
 const closeModal2 = document.querySelector(".closeModal2");
 const closeModal3 = document.querySelector(".closeModal3");
-
+ 
 const modal = document.querySelector(".modal");
 const modal2 = document.querySelector(".modal2");
 const modal3 = document.querySelector(".modal3");

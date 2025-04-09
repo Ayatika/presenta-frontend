@@ -6,7 +6,7 @@ const errorMessage = document.querySelector("#errorMessage");
 
 
 
-const myCred = {
+const myCred = { 
     name:"mohssine",
     password: "147852369"
 }
